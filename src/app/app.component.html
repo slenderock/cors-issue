@@ -1,1 +1,9 @@
-<h1>APP</h1>
+<div class="container">
+  <input ngMode type="text" required=true #url>
+  <button (click)="this.sendRequest(url.value)">Submit</button>
+  <p>
+    {{ this.response }}
+  </p>
+  example: https://www.youtube.com/feeds/videos.xml?channel_id=UCBcRF18a7Qf58cCRy5xuWwQ
+</div>
+
